@@ -3,6 +3,10 @@ const apiUrl = "https://api.adviceslip.com/advice";
 getAdvice(); 
 
 //need to add event listener for click on dice to get new advice...
+const adviceButton = document.querySelector("button");
+adviceButton.addEventListener("click", () => {
+    getAdvice();
+});
 
 async function getAdvice(){
     const response = await fetch(apiUrl);
