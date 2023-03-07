@@ -23,6 +23,6 @@ function displayAdvice(id, advice) {
     const adviceSpan = document.getElementById("advice");
     const header = document.querySelector("h1");
 
-    header.innerText += `${id}`;
+    header.innerText = `Advice #${id}`;
     adviceSpan.innerText = advice;
 }
