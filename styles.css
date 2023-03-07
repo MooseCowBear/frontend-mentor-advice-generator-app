@@ -76,6 +76,7 @@ body {
 }
 
 main {
+    margin-top: 1em;
     background-color: var(--background-secondary);
     max-width: 28rem;
     border-radius: 1em;
@@ -122,6 +123,17 @@ span {
     transform: translate(-50%, 20%); /*translateX(-50%);*/
 }
 
+.dice-wrapper:hover, .dice-wrapper:focus-within {
+    box-shadow: 0px 0px 36px 1px var(--text-secondary);
+    cursor: pointer;
+}
+
 .dice-wrapper > img {
     transform: scale(0.9);
+}
+
+@media (max-width: 440px) {
+    main {
+        max-width: 90vw;
+    }
 }
