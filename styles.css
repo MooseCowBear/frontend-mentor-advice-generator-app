@@ -139,3 +139,10 @@ span {
         max-width: 90vw;
     }
 }
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; }
+.attribution a { 
+    color: var(--text); 
+}
