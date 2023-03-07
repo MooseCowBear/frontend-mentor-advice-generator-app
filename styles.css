@@ -1,0 +1,127 @@
+:root {
+    --text: hsl(193, 38%, 86%);
+    --text-secondary: hsl(150, 100%, 66%);
+
+    --background: hsl(218, 23%, 16%);
+    --background-secondary: hsl(217, 19%, 24%);
+    --x: hsl(217, 19%, 38%); /* where does this go?? */
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p, 
+section,
+article {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* end reset */
+body {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    color: var(--text);
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+
+main {
+    background-color: var(--background-secondary);
+    max-width: 28rem;
+    border-radius: 1em;
+    position: relative;;
+    padding: 2.4em 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h1{ 
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 2px;
+}
+
+p {
+    padding: 2em;
+}
+
+span {
+    font-size: 1.6em;
+    font-weight: 800;
+}
+
+.dice-wrapper {
+    background-color: var(--text-secondary);
+    height: 3.6em;
+    width: 3.6em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 20%); /*translateX(-50%);*/
+}
+
+.dice-wrapper > img {
+    transform: scale(0.9);
+}
