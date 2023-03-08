@@ -10,7 +10,7 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Generate a new piece of advice by clicking the dice icon
 
-## Screenshot
+## Screenshots
 
 ![alt text](screenshots/desktop.png "advice generator")
 ![alt text](screenshots/desktop-with-hover.png "advice generator with hover effect")
