@@ -112,7 +112,7 @@ span {
 }
 
 .dice-wrapper {
-    border: none;
+    border: transparent;
     background-color: var(--text-secondary);
     height: 3.6rem;
     width: 3.6rem;
