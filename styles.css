@@ -4,7 +4,6 @@
 
     --background: hsl(218, 23%, 16%);
     --background-secondary: hsl(217, 19%, 24%);
-    --x: hsl(217, 19%, 38%); /* where does this go?? */
 }
 
 /* reset */
@@ -122,7 +121,7 @@ span {
     align-items: center;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 20%); /*translateX(-50%);*/
+    transform: translate(-50%, 20%); 
 }
 
 .dice-wrapper:hover, .dice-wrapper:focus-within {
