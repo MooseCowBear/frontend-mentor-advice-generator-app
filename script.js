@@ -5,11 +5,13 @@ getAdvice();
 //need to add event listener for click on dice to get new advice...
 const adviceButton = document.querySelector("button");
 adviceButton.addEventListener("click", () => {
+    console.log("button clicked");
     getAdvice();
 });
 
 async function getAdvice(){
-    const response = await fetch(apiUrl);
+    console.log("calling getAdvice");
+    const response = await fetch(apiUrl, {cache: "no-cache"}); //firefox needed no-cache
     const data = await response.json();
     console.log(data);
 
